@@ -56,11 +56,31 @@ Indique qu� componentes se consideran expuestos y cu�les permanecen en la re
 
 ---
 
-## 6. Diagrama l�gico de infraestructura
-
-Diagrama conceptual infraestructura
-
-### Diagrama de ejemplo en [Mermaid](https://mermaid.ai/app/projects/b11d8de8-2dd8-45c0-8947-5512b4f4ab68/diagrams/01298fb0-c1ee-474a-8211-44578d7496dc/share/invite/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiMDEyOThmYjAtYzFlZS00NzRhLTgyMTEtNDQ1NzhkNzQ5NmRjIiwiYWNjZXNzIjoiVmlldyIsImlhdCI6MTc3MDUwOTAwNn0.T2VaF24-8L1PsTAug3Z9k0zNK2FXSvcwDPn2UAorvfQ)
+## 6. Diagrama lógico de infraestructura
 
 
+Diagrama conceptual de la infraestructura:
 
+```mermaid
+flowchart TD
+    U[Usuarios] --> A
+    
+    subgraph Zona_Publica [Zona Pública / DMZ]
+        A[Servidor Web]
+    end
+
+    subgraph Zona_Privada [Red Interna]
+        B[Servidor de Aplicaciones]
+        C[Servidor de Base de Datos]
+    end
+
+    subgraph Gestion [Gestión y Soporte]
+        D[Sistemas de Respaldo]
+        E[Sistema de Monitoreo]
+    end
+
+    A --> B
+    B --> C
+    C -.-> D
+    B -.-> E
+    C -.-> E
