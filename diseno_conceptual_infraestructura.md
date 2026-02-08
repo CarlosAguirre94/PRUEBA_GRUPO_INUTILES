@@ -58,20 +58,9 @@ Indique qu� componentes se consideran expuestos y cu�les permanecen en la re
 
 ## 6. Diagrama l�gico de infraestructura
 
-Incluya a continuaci�n el diagrama conceptual de la infraestructura.
+Diagrama conceptual infraestructura
 
-### Diagrama de ejemplo en [Mermaid](https://mermaid.js.org/syntax/flowchart.html)
+### Diagrama de ejemplo en [Mermaid](https://mermaid.ai/app/projects/b11d8de8-2dd8-45c0-8947-5512b4f4ab68/diagrams/01298fb0-c1ee-474a-8211-44578d7496dc/share/invite/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiMDEyOThmYjAtYzFlZS00NzRhLTgyMTEtNDQ1NzhkNzQ5NmRjIiwiYWNjZXNzIjoiVmlldyIsImlhdCI6MTc3MDUwOTAwNn0.T2VaF24-8L1PsTAug3Z9k0zNK2FXSvcwDPn2UAorvfQ)
 
-```
-flowchart TD
-    U[Usuarios / Sucursales]
-    W[Servidor Web]
-    A[Servidor de Aplicaciones]
-    D[Servidor de Base de Datos]
 
-    U --> W
-    W --> A
-    A --> D
-
-```
 
